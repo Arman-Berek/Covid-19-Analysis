@@ -29,4 +29,4 @@ The files in the repository include:
 
 ### Summary
 In the analysis I was able to predict counties with 0.1%, 0.2%, and 1% infected population with f1 scores of 0.95, 0.94, and 0.99 repectively. I Then decided to try the analysis again but now without considering the size of 
-the counties. My new f1 scores are 0.94, 0.94, 0.99.
+the counties. My new f1 scores are 0.94, 0.94, 0.99. Due to the availability of my data, I only had data for 2,713 counties out of 3,141.
