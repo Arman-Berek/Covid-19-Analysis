@@ -1,0 +1,3053 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.20.0525.1210                               -->
+<workbook source-build='2020.2.1 (20202.20.0525.1210)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SpatialFileLayer />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Parameter - Columns' datatype='string' name='[EP_LIMENG Parameter (copy)_26388282587279364]' param-domain-type='list' role='measure' type='nominal' value='&quot;E Mobile&quot;'>
+        <calculation class='tableau' formula='&quot;E Mobile&quot;' />
+        <members>
+          <member value='&quot;infectedperc&quot;' />
+          <member value='&quot;Estimated Limeng&quot;' />
+          <member value='&quot;Estimated Minority&quot;' />
+          <member value='&quot;Estimated Nohsdp&quot;' />
+          <member value='&quot;E Munit&quot;' />
+          <member value='&quot;E Noveh&quot;' />
+          <member value='&quot;E Mobile&quot;' />
+        </members>
+      </column>
+      <column caption='Parameter - rows' datatype='string' name='[Parameter - Columns (copy)_1320962070497808398]' param-domain-type='list' role='measure' type='nominal' value='&quot;infectedperc&quot;'>
+        <calculation class='tableau' formula='&quot;infectedperc&quot;' />
+        <members>
+          <member value='&quot;infectedperc&quot;' />
+          <member value='&quot;Estimated Limeng&quot;' />
+          <member value='&quot;Estimated Minority&quot;' />
+          <member value='&quot;Estimated Nohsdp&quot;' />
+          <member value='&quot;E Munit&quot;' />
+          <member value='&quot;E Noveh&quot;' />
+          <member value='&quot;E Mobile&quot;' />
+        </members>
+      </column>
+    </datasource>
+    <datasource caption='features100V2' inline='true' name='federated.09jsnds04efbqy165yx5m0hscs35' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='features100V2' name='textscan.12tlvvk0plbayg171tq2n066dfg3'>
+            <connection class='textscan' directory='Data/Downloads' filename='features100V2.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.12tlvvk0plbayg171tq2n066dfg3' name='features100V2.csv' table='[features100V2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='F1' ordinal='0' />
+            <column datatype='integer' name='score' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.12tlvvk0plbayg171tq2n066dfg3' name='features100V2.csv' table='[features100V2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='F1' ordinal='0' />
+            <column datatype='integer' name='score' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[features100V2.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[features100V2.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[features100V2.csv_9D5AF897F08C4B68A971B8C4EFAC123A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[score]</local-name>
+            <parent-name>[features100V2.csv]</parent-name>
+            <remote-alias>score</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[features100V2.csv_9D5AF897F08C4B68A971B8C4EFAC123A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='features100V2.csv' datatype='table' name='[__tableau_internal_object_id__].[features100V2.csv_9D5AF897F08C4B68A971B8C4EFAC123A]' role='measure' type='quantitative' />
+      <column caption='Score' datatype='integer' name='[score]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='features100V2.csv' id='features100V2.csv_9D5AF897F08C4B68A971B8C4EFAC123A'>
+            <properties context=''>
+              <relation connection='textscan.12tlvvk0plbayg171tq2n066dfg3' name='features100V2.csv' table='[features100V2#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='F1' ordinal='0' />
+                  <column datatype='integer' name='score' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='covid4.csv+ (Multiple Connections)' inline='true' name='federated.0gze9e50xcx58w1eb9ccv1hehla7' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='covid4' name='textscan.0b59o0y0yqphh318u7car0kffbtj'>
+            <connection class='textscan' directory='Data/Downloads' filename='covid4.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='UScounties' name='ogrdirect.0q94j000qb6mp814lap0o1db90pe'>
+            <connection class='ogrdirect' directory='Data/Downloads/UScounties' filename='UScounties.shp' ogr-grid-shift-folder='/Applications/Tableau Desktop 2020.2.app/Contents/install/local/proj4' password='' server='' tablename='' />
+          </named-connection>
+          <named-connection caption='features100V2' name='textscan.0y84dng0zhmp3015pqis70n0gxnv'>
+            <connection class='textscan' directory='Data/Downloads' filename='features100V2.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='IF LEN([covid4.csv].[fips]) &lt; 5 THEN &apos;0&apos; + [covid4.csv].[fips] ELSE [covid4.csv].[fips] END ' />
+              <expression op='[UScounties.shp].[STATE_FIPS] + [UScounties.shp].[CNTY_FIPS]' />
+            </expression>
+          </clause>
+          <relation connection='textscan.0b59o0y0yqphh318u7car0kffbtj' name='covid4.csv' table='[covid4#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='date' name='date' ordinal='1' />
+              <column datatype='string' name='county' ordinal='2' />
+              <column datatype='string' name='state' ordinal='3' />
+              <column datatype='string' name='fips' ordinal='4' />
+              <column datatype='integer' name='cases' ordinal='5' />
+              <column datatype='integer' name='deaths' ordinal='6' />
+              <column datatype='integer' name='CENSUS2010POP' ordinal='7' />
+              <column datatype='integer' name='ESTIMATESBASE2010' ordinal='8' />
+              <column datatype='integer' name='POPESTIMATE2019' ordinal='9' />
+              <column datatype='integer' name='NPOPCHG_2019' ordinal='10' />
+              <column datatype='integer' name='BIRTHS2019' ordinal='11' />
+              <column datatype='integer' name='DEATHS2019' ordinal='12' />
+              <column datatype='integer' name='NATURALINC2019' ordinal='13' />
+              <column datatype='integer' name='RESIDUAL2019' ordinal='14' />
+              <column datatype='integer' name='GQESTIMATES2019' ordinal='15' />
+              <column datatype='real' name='RBIRTH2019' ordinal='16' />
+              <column datatype='real' name='RDEATH2019' ordinal='17' />
+              <column datatype='real' name='RNATURALINC2019' ordinal='18' />
+              <column datatype='real' name='AREA_SQMI' ordinal='19' />
+              <column datatype='integer' name='E_HU' ordinal='20' />
+              <column datatype='integer' name='E_HH' ordinal='21' />
+              <column datatype='integer' name='E_POV' ordinal='22' />
+              <column datatype='integer' name='E_UNEMP' ordinal='23' />
+              <column datatype='integer' name='E_PCI' ordinal='24' />
+              <column datatype='integer' name='E_NOHSDP' ordinal='25' />
+              <column datatype='integer' name='E_AGE65' ordinal='26' />
+              <column datatype='integer' name='E_AGE17' ordinal='27' />
+              <column datatype='integer' name='E_DISABL' ordinal='28' />
+              <column datatype='integer' name='E_SNGPNT' ordinal='29' />
+              <column datatype='integer' name='E_MINRTY' ordinal='30' />
+              <column datatype='integer' name='E_LIMENG' ordinal='31' />
+              <column datatype='integer' name='E_MUNIT' ordinal='32' />
+              <column datatype='integer' name='E_MOBILE' ordinal='33' />
+              <column datatype='integer' name='E_CROWD' ordinal='34' />
+              <column datatype='integer' name='E_NOVEH' ordinal='35' />
+              <column datatype='integer' name='E_GROUPQ' ordinal='36' />
+              <column datatype='integer' name='F_POV' ordinal='37' />
+              <column datatype='integer' name='F_UNEMP' ordinal='38' />
+              <column datatype='integer' name='F_PCI' ordinal='39' />
+              <column datatype='integer' name='F_NOHSDP' ordinal='40' />
+              <column datatype='integer' name='F_THEME1' ordinal='41' />
+              <column datatype='integer' name='F_AGE65' ordinal='42' />
+              <column datatype='integer' name='F_AGE17' ordinal='43' />
+              <column datatype='integer' name='F_DISABL' ordinal='44' />
+              <column datatype='integer' name='F_SNGPNT' ordinal='45' />
+              <column datatype='integer' name='F_THEME2' ordinal='46' />
+              <column datatype='integer' name='F_MINRTY' ordinal='47' />
+              <column datatype='integer' name='F_LIMENG' ordinal='48' />
+              <column datatype='integer' name='F_THEME3' ordinal='49' />
+              <column datatype='integer' name='F_MUNIT' ordinal='50' />
+              <column datatype='integer' name='F_MOBILE' ordinal='51' />
+              <column datatype='integer' name='F_CROWD' ordinal='52' />
+              <column datatype='integer' name='F_NOVEH' ordinal='53' />
+              <column datatype='integer' name='F_GROUPQ' ordinal='54' />
+              <column datatype='integer' name='F_THEME4' ordinal='55' />
+              <column datatype='integer' name='F_TOTAL' ordinal='56' />
+              <column datatype='real' name='avgRes' ordinal='57' />
+              <column datatype='real' name='avgGroc' ordinal='58' />
+              <column datatype='real' name='avgParks' ordinal='59' />
+              <column datatype='real' name='avgTran' ordinal='60' />
+              <column datatype='real' name='avgWork' ordinal='61' />
+              <column datatype='real' name='avgRetail' ordinal='62' />
+              <column datatype='integer' name='Infect10k' ordinal='63' />
+              <column datatype='integer' name='Infect1k' ordinal='64' />
+              <column datatype='integer' name='Infect500' ordinal='65' />
+              <column datatype='integer' name='Infect100' ordinal='66' />
+              <column datatype='integer' name='predictedInfections100' ordinal='67' />
+              <column datatype='real' name='estimated_mobile' ordinal='68' />
+              <column datatype='real' name='estimated_pci' ordinal='69' />
+              <column datatype='real' name='estimated_nohsdp' ordinal='70' />
+              <column datatype='real' name='estimated_minority' ordinal='71' />
+              <column datatype='real' name='estimated_limeng' ordinal='72' />
+              <column datatype='integer' name='predictedInfections1k' ordinal='73' />
+              <column datatype='integer' name='predictedInfections500' ordinal='74' />
+              <column datatype='integer' name='predictedInfections1kV2' ordinal='75' />
+              <column datatype='integer' name='predictedInfections500V2' ordinal='76' />
+              <column datatype='integer' name='predictedInfections100V2' ordinal='77' />
+            </columns>
+          </relation>
+          <relation connection='ogrdirect.0q94j000qb6mp814lap0o1db90pe' name='UScounties.shp' table='[UScounties.shp]' type='table'>
+            <columns>
+              <column datatype='string' name='NAME' ordinal='0' />
+              <column datatype='string' name='STATE_NAME' ordinal='1' />
+              <column datatype='string' name='STATE_FIPS' ordinal='2' />
+              <column datatype='string' name='CNTY_FIPS' ordinal='3' />
+              <column datatype='string' name='FIPS' ordinal='4' />
+              <column datatype='spatial' name='Geometry' ordinal='5' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='IF LEN([covid4.csv].[fips]) &lt; 5 THEN &apos;0&apos; + [covid4.csv].[fips] ELSE [covid4.csv].[fips] END ' />
+              <expression op='[UScounties.shp].[STATE_FIPS] + [UScounties.shp].[CNTY_FIPS]' />
+            </expression>
+          </clause>
+          <relation connection='textscan.0b59o0y0yqphh318u7car0kffbtj' name='covid4.csv' table='[covid4#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='date' name='date' ordinal='1' />
+              <column datatype='string' name='county' ordinal='2' />
+              <column datatype='string' name='state' ordinal='3' />
+              <column datatype='string' name='fips' ordinal='4' />
+              <column datatype='integer' name='cases' ordinal='5' />
+              <column datatype='integer' name='deaths' ordinal='6' />
+              <column datatype='integer' name='CENSUS2010POP' ordinal='7' />
+              <column datatype='integer' name='ESTIMATESBASE2010' ordinal='8' />
+              <column datatype='integer' name='POPESTIMATE2019' ordinal='9' />
+              <column datatype='integer' name='NPOPCHG_2019' ordinal='10' />
+              <column datatype='integer' name='BIRTHS2019' ordinal='11' />
+              <column datatype='integer' name='DEATHS2019' ordinal='12' />
+              <column datatype='integer' name='NATURALINC2019' ordinal='13' />
+              <column datatype='integer' name='RESIDUAL2019' ordinal='14' />
+              <column datatype='integer' name='GQESTIMATES2019' ordinal='15' />
+              <column datatype='real' name='RBIRTH2019' ordinal='16' />
+              <column datatype='real' name='RDEATH2019' ordinal='17' />
+              <column datatype='real' name='RNATURALINC2019' ordinal='18' />
+              <column datatype='real' name='AREA_SQMI' ordinal='19' />
+              <column datatype='integer' name='E_HU' ordinal='20' />
+              <column datatype='integer' name='E_HH' ordinal='21' />
+              <column datatype='integer' name='E_POV' ordinal='22' />
+              <column datatype='integer' name='E_UNEMP' ordinal='23' />
+              <column datatype='integer' name='E_PCI' ordinal='24' />
+              <column datatype='integer' name='E_NOHSDP' ordinal='25' />
+              <column datatype='integer' name='E_AGE65' ordinal='26' />
+              <column datatype='integer' name='E_AGE17' ordinal='27' />
+              <column datatype='integer' name='E_DISABL' ordinal='28' />
+              <column datatype='integer' name='E_SNGPNT' ordinal='29' />
+              <column datatype='integer' name='E_MINRTY' ordinal='30' />
+              <column datatype='integer' name='E_LIMENG' ordinal='31' />
+              <column datatype='integer' name='E_MUNIT' ordinal='32' />
+              <column datatype='integer' name='E_MOBILE' ordinal='33' />
+              <column datatype='integer' name='E_CROWD' ordinal='34' />
+              <column datatype='integer' name='E_NOVEH' ordinal='35' />
+              <column datatype='integer' name='E_GROUPQ' ordinal='36' />
+              <column datatype='integer' name='F_POV' ordinal='37' />
+              <column datatype='integer' name='F_UNEMP' ordinal='38' />
+              <column datatype='integer' name='F_PCI' ordinal='39' />
+              <column datatype='integer' name='F_NOHSDP' ordinal='40' />
+              <column datatype='integer' name='F_THEME1' ordinal='41' />
+              <column datatype='integer' name='F_AGE65' ordinal='42' />
+              <column datatype='integer' name='F_AGE17' ordinal='43' />
+              <column datatype='integer' name='F_DISABL' ordinal='44' />
+              <column datatype='integer' name='F_SNGPNT' ordinal='45' />
+              <column datatype='integer' name='F_THEME2' ordinal='46' />
+              <column datatype='integer' name='F_MINRTY' ordinal='47' />
+              <column datatype='integer' name='F_LIMENG' ordinal='48' />
+              <column datatype='integer' name='F_THEME3' ordinal='49' />
+              <column datatype='integer' name='F_MUNIT' ordinal='50' />
+              <column datatype='integer' name='F_MOBILE' ordinal='51' />
+              <column datatype='integer' name='F_CROWD' ordinal='52' />
+              <column datatype='integer' name='F_NOVEH' ordinal='53' />
+              <column datatype='integer' name='F_GROUPQ' ordinal='54' />
+              <column datatype='integer' name='F_THEME4' ordinal='55' />
+              <column datatype='integer' name='F_TOTAL' ordinal='56' />
+              <column datatype='real' name='avgRes' ordinal='57' />
+              <column datatype='real' name='avgGroc' ordinal='58' />
+              <column datatype='real' name='avgParks' ordinal='59' />
+              <column datatype='real' name='avgTran' ordinal='60' />
+              <column datatype='real' name='avgWork' ordinal='61' />
+              <column datatype='real' name='avgRetail' ordinal='62' />
+              <column datatype='integer' name='Infect10k' ordinal='63' />
+              <column datatype='integer' name='Infect1k' ordinal='64' />
+              <column datatype='integer' name='Infect500' ordinal='65' />
+              <column datatype='integer' name='Infect100' ordinal='66' />
+              <column datatype='integer' name='predictedInfections100' ordinal='67' />
+              <column datatype='real' name='estimated_mobile' ordinal='68' />
+              <column datatype='real' name='estimated_pci' ordinal='69' />
+              <column datatype='real' name='estimated_nohsdp' ordinal='70' />
+              <column datatype='real' name='estimated_minority' ordinal='71' />
+              <column datatype='real' name='estimated_limeng' ordinal='72' />
+              <column datatype='integer' name='predictedInfections1k' ordinal='73' />
+              <column datatype='integer' name='predictedInfections500' ordinal='74' />
+              <column datatype='integer' name='predictedInfections1kV2' ordinal='75' />
+              <column datatype='integer' name='predictedInfections500V2' ordinal='76' />
+              <column datatype='integer' name='predictedInfections100V2' ordinal='77' />
+            </columns>
+          </relation>
+          <relation connection='ogrdirect.0q94j000qb6mp814lap0o1db90pe' name='UScounties.shp' table='[UScounties.shp]' type='table'>
+            <columns>
+              <column datatype='string' name='NAME' ordinal='0' />
+              <column datatype='string' name='STATE_NAME' ordinal='1' />
+              <column datatype='string' name='STATE_FIPS' ordinal='2' />
+              <column datatype='string' name='CNTY_FIPS' ordinal='3' />
+              <column datatype='string' name='FIPS' ordinal='4' />
+              <column datatype='spatial' name='Geometry' ordinal='5' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>county</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[county]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>county</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fips</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fips]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>fips</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cases]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>cases</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[deaths]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>deaths</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CENSUS2010POP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CENSUS2010POP]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>CENSUS2010POP</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ESTIMATESBASE2010</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ESTIMATESBASE2010]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>ESTIMATESBASE2010</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>POPESTIMATE2019</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[POPESTIMATE2019]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>POPESTIMATE2019</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NPOPCHG_2019</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NPOPCHG_2019]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>NPOPCHG_2019</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BIRTHS2019</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BIRTHS2019]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>BIRTHS2019</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DEATHS2019</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DEATHS2019]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>DEATHS2019</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NATURALINC2019</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NATURALINC2019]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>NATURALINC2019</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RESIDUAL2019</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RESIDUAL2019]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>RESIDUAL2019</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GQESTIMATES2019</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GQESTIMATES2019]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>GQESTIMATES2019</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RBIRTH2019</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RBIRTH2019]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>RBIRTH2019</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RDEATH2019</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RDEATH2019]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>RDEATH2019</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RNATURALINC2019</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RNATURALINC2019]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>RNATURALINC2019</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AREA_SQMI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AREA_SQMI]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>AREA_SQMI</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>E_HU</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[E_HU]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>E_HU</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>E_HH</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[E_HH]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>E_HH</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>E_POV</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[E_POV]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>E_POV</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>E_UNEMP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[E_UNEMP]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>E_UNEMP</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>E_PCI</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[E_PCI]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>E_PCI</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>E_NOHSDP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[E_NOHSDP]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>E_NOHSDP</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>E_AGE65</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[E_AGE65]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>E_AGE65</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>E_AGE17</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[E_AGE17]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>E_AGE17</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>E_DISABL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[E_DISABL]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>E_DISABL</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>E_SNGPNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[E_SNGPNT]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>E_SNGPNT</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>E_MINRTY</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[E_MINRTY]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>E_MINRTY</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>E_LIMENG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[E_LIMENG]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>E_LIMENG</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>E_MUNIT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[E_MUNIT]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>E_MUNIT</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>E_MOBILE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[E_MOBILE]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>E_MOBILE</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>E_CROWD</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[E_CROWD]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>E_CROWD</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>E_NOVEH</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[E_NOVEH]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>E_NOVEH</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>E_GROUPQ</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[E_GROUPQ]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>E_GROUPQ</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F_POV</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F_POV]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>F_POV</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F_UNEMP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F_UNEMP]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>F_UNEMP</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F_PCI</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F_PCI]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>F_PCI</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F_NOHSDP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F_NOHSDP]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>F_NOHSDP</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F_THEME1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F_THEME1]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>F_THEME1</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F_AGE65</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F_AGE65]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>F_AGE65</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F_AGE17</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F_AGE17]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>F_AGE17</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F_DISABL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F_DISABL]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>F_DISABL</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F_SNGPNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F_SNGPNT]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>F_SNGPNT</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F_THEME2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F_THEME2]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>F_THEME2</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F_MINRTY</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F_MINRTY]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>F_MINRTY</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F_LIMENG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F_LIMENG]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>F_LIMENG</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F_THEME3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F_THEME3]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>F_THEME3</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F_MUNIT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F_MUNIT]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>F_MUNIT</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F_MOBILE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F_MOBILE]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>F_MOBILE</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F_CROWD</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F_CROWD]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>F_CROWD</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F_NOVEH</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F_NOVEH]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>F_NOVEH</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F_GROUPQ</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F_GROUPQ]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>F_GROUPQ</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F_THEME4</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F_THEME4]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>F_THEME4</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F_TOTAL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F_TOTAL]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>F_TOTAL</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avgRes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avgRes]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>avgRes</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avgGroc</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avgGroc]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>avgGroc</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avgParks</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avgParks]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>avgParks</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avgTran</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avgTran]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>avgTran</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avgWork</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avgWork]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>avgWork</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avgRetail</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avgRetail]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>avgRetail</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Infect10k</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Infect10k]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>Infect10k</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Infect1k</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Infect1k]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>Infect1k</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Infect500</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Infect500]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>Infect500</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Infect100</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Infect100]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>Infect100</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>predictedInfections100</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[predictedInfections100]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>predictedInfections100</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>estimated_mobile</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[estimated_mobile]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>estimated_mobile</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>estimated_pci</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[estimated_pci]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>estimated_pci</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>estimated_nohsdp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[estimated_nohsdp]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>estimated_nohsdp</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>estimated_minority</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[estimated_minority]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>estimated_minority</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>estimated_limeng</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[estimated_limeng]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>estimated_limeng</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>predictedInfections1k</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[predictedInfections1k]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>predictedInfections1k</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>predictedInfections500</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[predictedInfections500]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>predictedInfections500</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>predictedInfections1kV2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[predictedInfections1kV2]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>predictedInfections1kV2</remote-alias>
+            <ordinal>75</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>predictedInfections500V2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[predictedInfections500V2]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>predictedInfections500V2</remote-alias>
+            <ordinal>76</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>predictedInfections100V2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[predictedInfections100V2]</local-name>
+            <parent-name>[covid4.csv]</parent-name>
+            <remote-alias>predictedInfections100V2</remote-alias>
+            <ordinal>77</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME]</local-name>
+            <parent-name>[UScounties.shp]</parent-name>
+            <remote-alias>NAME</remote-alias>
+            <ordinal>78</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STATE_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[STATE_NAME]</local-name>
+            <parent-name>[UScounties.shp]</parent-name>
+            <remote-alias>STATE_NAME</remote-alias>
+            <ordinal>79</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STATE_FIPS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[STATE_FIPS]</local-name>
+            <parent-name>[UScounties.shp]</parent-name>
+            <remote-alias>STATE_FIPS</remote-alias>
+            <ordinal>80</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CNTY_FIPS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CNTY_FIPS]</local-name>
+            <parent-name>[UScounties.shp]</parent-name>
+            <remote-alias>CNTY_FIPS</remote-alias>
+            <ordinal>81</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FIPS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FIPS]</local-name>
+            <parent-name>[UScounties.shp]</parent-name>
+            <remote-alias>FIPS</remote-alias>
+            <ordinal>82</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geometry</remote-name>
+            <remote-type>8</remote-type>
+            <local-name>[Geometry]</local-name>
+            <parent-name>[UScounties.shp]</parent-name>
+            <remote-alias>Geometry</remote-alias>
+            <ordinal>83</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Collect</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Area Sqmi' datatype='real' name='[AREA_SQMI]' role='measure' type='quantitative' />
+      <column caption='Births2019' datatype='integer' name='[BIRTHS2019]' role='measure' type='quantitative' />
+      <column caption='Census2010Pop' datatype='integer' name='[CENSUS2010POP]' role='measure' type='quantitative' />
+      <column caption='Cnty Fips' datatype='string' name='[CNTY_FIPS]' role='dimension' type='nominal' />
+      <column caption='Between P25 and P75' datatype='boolean' name='[Calculation_1320962070463979522]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='RANK_PERCENTILE(SUM([cases]))&lt;= 0.75 and  &#10;RANK_PERCENTILE(SUM([cases])) &gt;= 0.25'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='infectedperc' datatype='real' name='[Calculation_1320962070464565251]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[cases] / [POPESTIMATE2019]' />
+      </column>
+      <column caption='MAX Between Q1 and Q3' datatype='integer' name='[Calculation_1320962070467104772]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='WINDOW_MAX(IF [Calculation_1320962070463979522] THEN SUM([cases]) ELSE&#10;NULL END)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='MIN Between Q1 and Q3' datatype='integer' name='[Calculation_1320962070468620293]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='WINDOW_MIN(IF [Calculation_1320962070463979522] THEN SUM([cases]) ELSE&#10;NULL END)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='IQR' datatype='integer' name='[Calculation_1320962070469599238]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_1320962070467104772] - [Calculation_1320962070468620293]'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Lower Whisker Limit' datatype='real' name='[Calculation_1320962070469898247]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_1320962070468620293] - (1.5 * [Calculation_1320962070469599238])'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Upper Whisker Limit' datatype='real' name='[Calculation_1320962070470070280]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_1320962070467104772] + (1.5 * [Calculation_1320962070469599238])'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Outlier' datatype='boolean' name='[Calculation_1320962070470254601]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='SUM([cases]) &lt; [Calculation_1320962070469898247] OR SUM([cases]) &gt; [Calculation_1320962070470070280]'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='FIPS' datatype='string' name='[Calculation_1320962070496387084]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF LEN([fips]) &lt; 5 THEN &apos;0&apos; + [fips] ELSE [fips] END' />
+      </column>
+      <column caption='Deaths2019' datatype='integer' name='[DEATHS2019]' role='measure' type='quantitative' />
+      <column caption='Estimatesbase2010' datatype='integer' name='[ESTIMATESBASE2010]' role='measure' type='quantitative' />
+      <column caption='E Age17' datatype='integer' name='[E_AGE17]' role='measure' type='quantitative' />
+      <column caption='E Age65' datatype='integer' name='[E_AGE65]' role='measure' type='quantitative' />
+      <column caption='E Crowd' datatype='integer' name='[E_CROWD]' role='measure' type='quantitative' />
+      <column caption='E Disabl' datatype='integer' name='[E_DISABL]' role='measure' type='quantitative' />
+      <column caption='E Groupq' datatype='integer' name='[E_GROUPQ]' role='measure' type='quantitative' />
+      <column caption='E Hh' datatype='integer' name='[E_HH]' role='measure' type='quantitative' />
+      <column caption='E Hu' datatype='integer' name='[E_HU]' role='measure' type='quantitative' />
+      <column caption='E Limeng' datatype='integer' name='[E_LIMENG]' role='measure' type='quantitative' />
+      <column caption='E Minrty' datatype='integer' name='[E_MINRTY]' role='measure' type='quantitative' />
+      <column caption='E Mobile' datatype='integer' name='[E_MOBILE]' role='measure' type='quantitative' />
+      <column caption='E Munit' datatype='integer' name='[E_MUNIT]' role='measure' type='quantitative' />
+      <column caption='E Nohsdp' datatype='integer' name='[E_NOHSDP]' role='measure' type='quantitative' />
+      <column caption='E Noveh' datatype='integer' name='[E_NOVEH]' role='measure' type='quantitative' />
+      <column caption='E Pci' datatype='integer' name='[E_PCI]' role='measure' type='quantitative' />
+      <column caption='E Pov' datatype='integer' name='[E_POV]' role='measure' type='quantitative' />
+      <column caption='E Sngpnt' datatype='integer' name='[E_SNGPNT]' role='measure' type='quantitative' />
+      <column caption='E Unemp' datatype='integer' name='[E_UNEMP]' role='measure' type='quantitative' />
+      <column caption='Fips1' datatype='string' name='[FIPS]' role='dimension' type='nominal' />
+      <column caption='F Age17' datatype='integer' name='[F_AGE17]' role='measure' type='quantitative' />
+      <column caption='F Age65' datatype='integer' name='[F_AGE65]' role='measure' type='quantitative' />
+      <column caption='F Crowd' datatype='integer' name='[F_CROWD]' role='measure' type='quantitative' />
+      <column caption='F Disabl' datatype='integer' name='[F_DISABL]' role='measure' type='quantitative' />
+      <column caption='F Groupq' datatype='integer' name='[F_GROUPQ]' role='measure' type='quantitative' />
+      <column caption='F Limeng' datatype='integer' name='[F_LIMENG]' role='measure' type='quantitative' />
+      <column caption='F Minrty' datatype='integer' name='[F_MINRTY]' role='measure' type='quantitative' />
+      <column caption='F Mobile' datatype='integer' name='[F_MOBILE]' role='measure' type='quantitative' />
+      <column caption='F Munit' datatype='integer' name='[F_MUNIT]' role='measure' type='quantitative' />
+      <column caption='F Nohsdp' datatype='integer' name='[F_NOHSDP]' role='measure' type='quantitative' />
+      <column caption='F Noveh' datatype='integer' name='[F_NOVEH]' role='measure' type='quantitative' />
+      <column caption='F Pci' datatype='integer' name='[F_PCI]' role='measure' type='quantitative' />
+      <column caption='F Pov' datatype='integer' name='[F_POV]' role='measure' type='quantitative' />
+      <column caption='F Sngpnt' datatype='integer' name='[F_SNGPNT]' role='measure' type='quantitative' />
+      <column caption='F Theme1' datatype='integer' name='[F_THEME1]' role='measure' type='quantitative' />
+      <column caption='F Theme2' datatype='integer' name='[F_THEME2]' role='measure' type='quantitative' />
+      <column caption='F Theme3' datatype='integer' name='[F_THEME3]' role='measure' type='quantitative' />
+      <column caption='F Theme4' datatype='integer' name='[F_THEME4]' role='measure' type='quantitative' />
+      <column caption='F Total' datatype='integer' name='[F_TOTAL]' role='measure' type='quantitative' />
+      <column caption='F Unemp' datatype='integer' name='[F_UNEMP]' role='measure' type='quantitative' />
+      <column caption='Gqestimates2019' datatype='integer' name='[GQESTIMATES2019]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[Infect100]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[Infect1k]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[Infect500]' role='dimension' type='ordinal' />
+      <column caption='Measures - rows' datatype='real' name='[Measures - Columns (copy)_1320962070497652749]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='CASE [Parameters].[Parameter - Columns (copy)_1320962070497808398]&#10;WHEN  &apos;Estimated Limeng&apos; THEN SUM([estimated_limeng])&#10;WHEN  &apos;Estimated Minority&apos; THEN SUM([estimated_minority])&#10;WHEN  &apos;Estimated Nohsdp&apos; THEN SUM([estimated_nohsdp])&#10;WHEN  &apos;E Mobile&apos; THEN SUM([E_MOBILE])&#10;WHEN  &apos;E Noveh&apos; THEN SUM([E_NOVEH])&#10;WHEN  &apos;E Munit&apos; THEN SUM([E_MUNIT])&#10;WHEN  &apos;infectedperc&apos; THEN SUM([Calculation_1320962070464565251])&#10;END' />
+      </column>
+      <column caption='Measures - Columns' datatype='real' name='[Measures - rows (copy)_1320962070483050507]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='CASE [Parameters].[EP_LIMENG Parameter (copy)_26388282587279364]&#10;WHEN  &apos;Estimated Limeng&apos; THEN SUM([estimated_limeng])&#10;WHEN  &apos;Estimated Minority&apos; THEN SUM([estimated_minority])&#10;WHEN  &apos;Estimated Nohsdp&apos; THEN SUM([estimated_nohsdp])&#10;WHEN  &apos;E Mobile&apos; THEN SUM([E_MOBILE])&#10;WHEN  &apos;E Noveh&apos; THEN SUM([E_NOVEH])&#10;WHEN  &apos;E Munit&apos; THEN SUM([E_MUNIT])&#10;WHEN  &apos;infectedperc&apos; THEN SUM([Calculation_1320962070464565251])&#10;END' />
+      </column>
+      <column caption='Name' datatype='string' name='[NAME]' role='dimension' type='nominal' />
+      <column caption='Naturalinc2019' datatype='integer' name='[NATURALINC2019]' role='measure' type='quantitative' />
+      <column caption='Npopchg 2019' datatype='integer' name='[NPOPCHG_2019]' role='measure' type='quantitative' />
+      <column caption='Popestimate2019' datatype='integer' name='[POPESTIMATE2019]' role='measure' type='quantitative' />
+      <column caption='Rbirth2019' datatype='real' name='[RBIRTH2019]' role='measure' type='quantitative' />
+      <column caption='Rdeath2019' datatype='real' name='[RDEATH2019]' role='measure' type='quantitative' />
+      <column caption='Residual2019' datatype='integer' name='[RESIDUAL2019]' role='measure' type='quantitative' />
+      <column caption='Rnaturalinc2019' datatype='real' name='[RNATURALINC2019]' role='measure' type='quantitative' />
+      <column caption='State Fips' datatype='string' name='[STATE_FIPS]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='State Name' datatype='string' name='[STATE_NAME]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='covid4.csv' datatype='table' name='[__tableau_internal_object_id__].[covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29]' role='measure' type='quantitative' />
+      <column caption='Avg Groc' datatype='real' name='[avgGroc]' role='measure' type='quantitative' />
+      <column caption='Avg Parks' datatype='real' name='[avgParks]' role='measure' type='quantitative' />
+      <column caption='Avg Res' datatype='real' name='[avgRes]' role='measure' type='quantitative' />
+      <column caption='Avg Retail' datatype='real' name='[avgRetail]' role='measure' type='quantitative' />
+      <column caption='Avg Tran' datatype='real' name='[avgTran]' role='measure' type='quantitative' />
+      <column caption='Avg Work' datatype='real' name='[avgWork]' role='measure' type='quantitative' />
+      <column caption='Cases' datatype='integer' name='[cases]' role='measure' type='quantitative' />
+      <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Deaths' datatype='integer' name='[deaths]' role='measure' type='quantitative' />
+      <column caption='Estimated Limeng' datatype='real' name='[estimated_limeng]' role='measure' type='quantitative' />
+      <column caption='Estimated Minority' datatype='real' name='[estimated_minority]' role='measure' type='quantitative' />
+      <column caption='Estimated Mobile' datatype='real' name='[estimated_mobile]' role='measure' type='quantitative' />
+      <column caption='Estimated Nohsdp' datatype='real' name='[estimated_nohsdp]' role='measure' type='quantitative' />
+      <column caption='Estimated Pci' datatype='real' name='[estimated_pci]' role='measure' type='quantitative' />
+      <column caption='Fips' datatype='string' name='[fips]' role='dimension' type='nominal' />
+      <column aggregation='Sum' datatype='integer' name='[predictedInfections100V2]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[predictedInfections1kV2]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[predictedInfections500V2]' role='dimension' type='ordinal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column-instance column='[Infect100]' derivation='None' name='[none:Infect100:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Infect1k]' derivation='None' name='[none:Infect1k:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Infect500]' derivation='None' name='[none:Infect500:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[predictedInfections100V2]' derivation='None' name='[none:predictedInfections100V2:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[predictedInfections1kV2]' derivation='None' name='[none:predictedInfections1kV2:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[predictedInfections500V2]' derivation='None' name='[none:predictedInfections500V2:ok]' pivot='key' type='ordinal' />
+      <drill-paths>
+        <drill-path name='state, county'>
+          <field>[state]</field>
+          <field>[county]</field>
+        </drill-path>
+      </drill-paths>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Infect1k:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>1</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Infect500:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>1</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:predictedInfections1kV2:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>1</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:predictedInfections500V2:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>1</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Infect100:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>1</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:predictedInfections100V2:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>1</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Parameter - Columns' datatype='string' name='[EP_LIMENG Parameter (copy)_26388282587279364]' param-domain-type='list' role='measure' type='nominal' value='&quot;E Mobile&quot;'>
+          <calculation class='tableau' formula='&quot;E Mobile&quot;' />
+        </column>
+        <column caption='Parameter - rows' datatype='string' name='[Parameter - Columns (copy)_1320962070497808398]' param-domain-type='list' role='measure' type='nominal' value='&quot;infectedperc&quot;'>
+          <calculation class='tableau' formula='&quot;infectedperc&quot;' />
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='covid4.csv' id='covid4.csv_6F0EF60D14C047EAAD84B2E1A9127B29'>
+            <properties context=''>
+              <relation join='inner' type='join'>
+                <clause type='join'>
+                  <expression op='='>
+                    <expression op='IF LEN([covid4.csv].[fips]) &lt; 5 THEN &apos;0&apos; + [covid4.csv].[fips] ELSE [covid4.csv].[fips] END ' />
+                    <expression op='[UScounties.shp].[STATE_FIPS] + [UScounties.shp].[CNTY_FIPS]' />
+                  </expression>
+                </clause>
+                <relation connection='textscan.0b59o0y0yqphh318u7car0kffbtj' name='covid4.csv' table='[covid4#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='integer' name='F1' ordinal='0' />
+                    <column datatype='date' name='date' ordinal='1' />
+                    <column datatype='string' name='county' ordinal='2' />
+                    <column datatype='string' name='state' ordinal='3' />
+                    <column datatype='string' name='fips' ordinal='4' />
+                    <column datatype='integer' name='cases' ordinal='5' />
+                    <column datatype='integer' name='deaths' ordinal='6' />
+                    <column datatype='integer' name='CENSUS2010POP' ordinal='7' />
+                    <column datatype='integer' name='ESTIMATESBASE2010' ordinal='8' />
+                    <column datatype='integer' name='POPESTIMATE2019' ordinal='9' />
+                    <column datatype='integer' name='NPOPCHG_2019' ordinal='10' />
+                    <column datatype='integer' name='BIRTHS2019' ordinal='11' />
+                    <column datatype='integer' name='DEATHS2019' ordinal='12' />
+                    <column datatype='integer' name='NATURALINC2019' ordinal='13' />
+                    <column datatype='integer' name='RESIDUAL2019' ordinal='14' />
+                    <column datatype='integer' name='GQESTIMATES2019' ordinal='15' />
+                    <column datatype='real' name='RBIRTH2019' ordinal='16' />
+                    <column datatype='real' name='RDEATH2019' ordinal='17' />
+                    <column datatype='real' name='RNATURALINC2019' ordinal='18' />
+                    <column datatype='real' name='AREA_SQMI' ordinal='19' />
+                    <column datatype='integer' name='E_HU' ordinal='20' />
+                    <column datatype='integer' name='E_HH' ordinal='21' />
+                    <column datatype='integer' name='E_POV' ordinal='22' />
+                    <column datatype='integer' name='E_UNEMP' ordinal='23' />
+                    <column datatype='integer' name='E_PCI' ordinal='24' />
+                    <column datatype='integer' name='E_NOHSDP' ordinal='25' />
+                    <column datatype='integer' name='E_AGE65' ordinal='26' />
+                    <column datatype='integer' name='E_AGE17' ordinal='27' />
+                    <column datatype='integer' name='E_DISABL' ordinal='28' />
+                    <column datatype='integer' name='E_SNGPNT' ordinal='29' />
+                    <column datatype='integer' name='E_MINRTY' ordinal='30' />
+                    <column datatype='integer' name='E_LIMENG' ordinal='31' />
+                    <column datatype='integer' name='E_MUNIT' ordinal='32' />
+                    <column datatype='integer' name='E_MOBILE' ordinal='33' />
+                    <column datatype='integer' name='E_CROWD' ordinal='34' />
+                    <column datatype='integer' name='E_NOVEH' ordinal='35' />
+                    <column datatype='integer' name='E_GROUPQ' ordinal='36' />
+                    <column datatype='integer' name='F_POV' ordinal='37' />
+                    <column datatype='integer' name='F_UNEMP' ordinal='38' />
+                    <column datatype='integer' name='F_PCI' ordinal='39' />
+                    <column datatype='integer' name='F_NOHSDP' ordinal='40' />
+                    <column datatype='integer' name='F_THEME1' ordinal='41' />
+                    <column datatype='integer' name='F_AGE65' ordinal='42' />
+                    <column datatype='integer' name='F_AGE17' ordinal='43' />
+                    <column datatype='integer' name='F_DISABL' ordinal='44' />
+                    <column datatype='integer' name='F_SNGPNT' ordinal='45' />
+                    <column datatype='integer' name='F_THEME2' ordinal='46' />
+                    <column datatype='integer' name='F_MINRTY' ordinal='47' />
+                    <column datatype='integer' name='F_LIMENG' ordinal='48' />
+                    <column datatype='integer' name='F_THEME3' ordinal='49' />
+                    <column datatype='integer' name='F_MUNIT' ordinal='50' />
+                    <column datatype='integer' name='F_MOBILE' ordinal='51' />
+                    <column datatype='integer' name='F_CROWD' ordinal='52' />
+                    <column datatype='integer' name='F_NOVEH' ordinal='53' />
+                    <column datatype='integer' name='F_GROUPQ' ordinal='54' />
+                    <column datatype='integer' name='F_THEME4' ordinal='55' />
+                    <column datatype='integer' name='F_TOTAL' ordinal='56' />
+                    <column datatype='real' name='avgRes' ordinal='57' />
+                    <column datatype='real' name='avgGroc' ordinal='58' />
+                    <column datatype='real' name='avgParks' ordinal='59' />
+                    <column datatype='real' name='avgTran' ordinal='60' />
+                    <column datatype='real' name='avgWork' ordinal='61' />
+                    <column datatype='real' name='avgRetail' ordinal='62' />
+                    <column datatype='integer' name='Infect10k' ordinal='63' />
+                    <column datatype='integer' name='Infect1k' ordinal='64' />
+                    <column datatype='integer' name='Infect500' ordinal='65' />
+                    <column datatype='integer' name='Infect100' ordinal='66' />
+                    <column datatype='integer' name='predictedInfections100' ordinal='67' />
+                    <column datatype='real' name='estimated_mobile' ordinal='68' />
+                    <column datatype='real' name='estimated_pci' ordinal='69' />
+                    <column datatype='real' name='estimated_nohsdp' ordinal='70' />
+                    <column datatype='real' name='estimated_minority' ordinal='71' />
+                    <column datatype='real' name='estimated_limeng' ordinal='72' />
+                    <column datatype='integer' name='predictedInfections1k' ordinal='73' />
+                    <column datatype='integer' name='predictedInfections500' ordinal='74' />
+                    <column datatype='integer' name='predictedInfections1kV2' ordinal='75' />
+                    <column datatype='integer' name='predictedInfections500V2' ordinal='76' />
+                    <column datatype='integer' name='predictedInfections100V2' ordinal='77' />
+                  </columns>
+                </relation>
+                <relation connection='ogrdirect.0q94j000qb6mp814lap0o1db90pe' name='UScounties.shp' table='[UScounties.shp]' type='table'>
+                  <columns>
+                    <column datatype='string' name='NAME' ordinal='0' />
+                    <column datatype='string' name='STATE_NAME' ordinal='1' />
+                    <column datatype='string' name='STATE_FIPS' ordinal='2' />
+                    <column datatype='string' name='CNTY_FIPS' ordinal='3' />
+                    <column datatype='string' name='FIPS' ordinal='4' />
+                    <column datatype='spatial' name='Geometry' ordinal='5' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='features 100'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Most Important Features&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='features100V2' name='federated.09jsnds04efbqy165yx5m0hscs35' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09jsnds04efbqy165yx5m0hscs35'>
+            <column datatype='string' name='[F1]' role='dimension' type='nominal' />
+            <column-instance column='[F1]' derivation='None' name='[none:F1:nk]' pivot='key' type='nominal' />
+            <column caption='Score' datatype='integer' name='[score]' role='measure' type='quantitative' />
+            <column-instance column='[score]' derivation='Sum' name='[sum:score:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.09jsnds04efbqy165yx5m0hscs35].[none:F1:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:F1:nk]' member='&quot;E_MOBILE&quot;' />
+              <groupfilter function='member' level='[none:F1:nk]' member='&quot;E_MUNIT&quot;' />
+              <groupfilter function='member' level='[none:F1:nk]' member='&quot;E_NOVEH&quot;' />
+              <groupfilter function='member' level='[none:F1:nk]' member='&quot;estimated_limeng&quot;' />
+              <groupfilter function='member' level='[none:F1:nk]' member='&quot;estimated_minority&quot;' />
+              <groupfilter function='member' level='[none:F1:nk]' member='&quot;estimated_nohsdp&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.09jsnds04efbqy165yx5m0hscs35].[none:F1:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.09jsnds04efbqy165yx5m0hscs35].[sum:score:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.09jsnds04efbqy165yx5m0hscs35].[none:F1:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.09jsnds04efbqy165yx5m0hscs35].[none:F1:nk]</rows>
+        <cols>[federated.09jsnds04efbqy165yx5m0hscs35].[sum:score:qk]</cols>
+      </table>
+      <simple-id uuid='{A06D5A1C-53FA-4842-9DC7-365DD7CBBE4A}' />
+    </worksheet>
+    <worksheet name='infect100'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='covid4.csv+ (Multiple Connections)' name='federated.0gze9e50xcx58w1eb9ccv1hehla7' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0gze9e50xcx58w1eb9ccv1hehla7'>
+            <column datatype='spatial' name='[Geometry]' role='measure' type='nominal' />
+            <column aggregation='Sum' datatype='integer' name='[Infect100]' role='dimension' type='ordinal' />
+            <column-instance column='[Geometry]' derivation='Collect' name='[clct:Geometry:nk]' pivot='key' type='nominal' />
+            <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column-instance column='[Infect100]' derivation='None' name='[none:Infect100:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[county]' derivation='None' name='[none:county:nk]' pivot='key' type='nominal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[Longitude (generated)]' field-type='quantitative' max='-6970464.8168627899' min='-15353842.622304412' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[Latitude (generated)]' field-type='quantitative' max='6318939.688588459' min='2821579.6102523664' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:Infect100:ok]' />
+              <lod column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[clct:Geometry:nk]' />
+              <lod column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:state:nk]' />
+              <lod column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:county:nk]' />
+              <geometry column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[clct:Geometry:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0gze9e50xcx58w1eb9ccv1hehla7].[Latitude (generated)]</rows>
+        <cols>[federated.0gze9e50xcx58w1eb9ccv1hehla7].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{8FCB52D5-ACCD-441B-95E0-5EC2DE6DDAFA}' />
+    </worksheet>
+    <worksheet name='infect1k'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='covid4.csv+ (Multiple Connections)' name='federated.0gze9e50xcx58w1eb9ccv1hehla7' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0gze9e50xcx58w1eb9ccv1hehla7'>
+            <column datatype='spatial' name='[Geometry]' role='measure' type='nominal' />
+            <column aggregation='Sum' datatype='integer' name='[Infect1k]' role='dimension' type='ordinal' />
+            <column-instance column='[Geometry]' derivation='Collect' name='[clct:Geometry:nk]' pivot='key' type='nominal' />
+            <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column-instance column='[Infect1k]' derivation='None' name='[none:Infect1k:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[county]' derivation='None' name='[none:county:nk]' pivot='key' type='nominal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[Longitude (generated)]' field-type='quantitative' max='-6698734.2158864876' min='-14949102.95650865' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[Latitude (generated)]' field-type='quantitative' max='6284397.4818782154' min='2842525.8479558337' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:Infect1k:ok]' />
+              <lod column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[clct:Geometry:nk]' />
+              <lod column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:state:nk]' />
+              <lod column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:county:nk]' />
+              <geometry column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[clct:Geometry:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0gze9e50xcx58w1eb9ccv1hehla7].[Latitude (generated)]</rows>
+        <cols>[federated.0gze9e50xcx58w1eb9ccv1hehla7].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{2DD3D558-1F4A-48AE-823D-D23432E0E0BA}' />
+    </worksheet>
+    <worksheet name='infect500'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Infected 0.2%</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='covid4.csv+ (Multiple Connections)' name='federated.0gze9e50xcx58w1eb9ccv1hehla7' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0gze9e50xcx58w1eb9ccv1hehla7'>
+            <column datatype='spatial' name='[Geometry]' role='measure' type='nominal' />
+            <column aggregation='Sum' datatype='integer' name='[Infect500]' role='dimension' type='ordinal' />
+            <column-instance column='[Geometry]' derivation='Collect' name='[clct:Geometry:nk]' pivot='key' type='nominal' />
+            <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column-instance column='[Infect500]' derivation='None' name='[none:Infect500:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[county]' derivation='None' name='[none:county:nk]' pivot='key' type='nominal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[Longitude (generated)]' field-type='quantitative' max='-6869262.8995647803' min='-15299411.324051168' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[Latitude (generated)]' field-type='quantitative' max='6365410.2997296313' min='2848538.5520303771' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:Infect500:ok]' value='Infected 0.2%'>
+              <formatted-text>
+                <run>Infected 0.2%</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:Infect500:ok]' />
+              <lod column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[clct:Geometry:nk]' />
+              <lod column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:state:nk]' />
+              <lod column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:county:nk]' />
+              <geometry column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[clct:Geometry:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0gze9e50xcx58w1eb9ccv1hehla7].[Latitude (generated)]</rows>
+        <cols>[federated.0gze9e50xcx58w1eb9ccv1hehla7].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{287FE060-6621-40AB-9E00-7CDF06AD047F}' />
+    </worksheet>
+    <worksheet name='predict100'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='covid4.csv+ (Multiple Connections)' name='federated.0gze9e50xcx58w1eb9ccv1hehla7' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0gze9e50xcx58w1eb9ccv1hehla7'>
+            <column datatype='spatial' name='[Geometry]' role='measure' type='nominal' />
+            <column-instance column='[Geometry]' derivation='Collect' name='[clct:Geometry:nk]' pivot='key' type='nominal' />
+            <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column-instance column='[county]' derivation='None' name='[none:county:nk]' pivot='key' type='nominal' />
+            <column-instance column='[predictedInfections100V2]' derivation='None' name='[none:predictedInfections100V2:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' datatype='integer' name='[predictedInfections100V2]' role='dimension' type='ordinal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[Longitude (generated)]' field-type='quantitative' max='-7011866.1230377825' min='-15239423.66718033' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[Latitude (generated)]' field-type='quantitative' max='6284252.3401006041' min='2851897.0335773169' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:predictedInfections100V2:ok]' />
+              <lod column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[clct:Geometry:nk]' />
+              <lod column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:state:nk]' />
+              <lod column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:county:nk]' />
+              <geometry column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[clct:Geometry:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0gze9e50xcx58w1eb9ccv1hehla7].[Latitude (generated)]</rows>
+        <cols>[federated.0gze9e50xcx58w1eb9ccv1hehla7].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{6F502732-AF55-4031-98BC-47FE01D7F901}' />
+    </worksheet>
+    <worksheet name='predict1k'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='covid4.csv+ (Multiple Connections)' name='federated.0gze9e50xcx58w1eb9ccv1hehla7' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0gze9e50xcx58w1eb9ccv1hehla7'>
+            <column datatype='spatial' name='[Geometry]' role='measure' type='nominal' />
+            <column-instance column='[Geometry]' derivation='Collect' name='[clct:Geometry:nk]' pivot='key' type='nominal' />
+            <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column-instance column='[county]' derivation='None' name='[none:county:nk]' pivot='key' type='nominal' />
+            <column-instance column='[predictedInfections1kV2]' derivation='None' name='[none:predictedInfections1kV2:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' datatype='integer' name='[predictedInfections1kV2]' role='dimension' type='ordinal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[Longitude (generated)]' field-type='quantitative' max='-6796283.4709205711' min='-14986371.796166163' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[Latitude (generated)]' field-type='quantitative' max='6288300.9907907974' min='2871577.0149050974' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:predictedInfections1kV2:ok]' />
+              <lod column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[clct:Geometry:nk]' />
+              <lod column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:state:nk]' />
+              <lod column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:county:nk]' />
+              <geometry column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[clct:Geometry:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0gze9e50xcx58w1eb9ccv1hehla7].[Latitude (generated)]</rows>
+        <cols>[federated.0gze9e50xcx58w1eb9ccv1hehla7].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{A8FA7B16-9AD2-4D02-9B51-55D121285A69}' />
+    </worksheet>
+    <worksheet name='predict500'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='covid4.csv+ (Multiple Connections)' name='federated.0gze9e50xcx58w1eb9ccv1hehla7' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0gze9e50xcx58w1eb9ccv1hehla7'>
+            <column datatype='spatial' name='[Geometry]' role='measure' type='nominal' />
+            <column-instance column='[Geometry]' derivation='Collect' name='[clct:Geometry:nk]' pivot='key' type='nominal' />
+            <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column-instance column='[county]' derivation='None' name='[none:county:nk]' pivot='key' type='nominal' />
+            <column-instance column='[predictedInfections500V2]' derivation='None' name='[none:predictedInfections500V2:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' datatype='integer' name='[predictedInfections500V2]' role='dimension' type='ordinal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[Longitude (generated)]' field-type='quantitative' max='-6952716.1577843614' min='-15443198.100285608' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[Latitude (generated)]' field-type='quantitative' max='6343534.3319741786' min='2801492.7729902919' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:predictedInfections500V2:ok]' />
+              <lod column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[clct:Geometry:nk]' />
+              <lod column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:state:nk]' />
+              <lod column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:county:nk]' />
+              <geometry column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[clct:Geometry:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0gze9e50xcx58w1eb9ccv1hehla7].[Latitude (generated)]</rows>
+        <cols>[federated.0gze9e50xcx58w1eb9ccv1hehla7].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{7BD2BB93-079C-4EFE-9855-9B570B1791B8}' />
+    </worksheet>
+    <worksheet name='scatter plots'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Plots</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='covid4.csv+ (Multiple Connections)' name='federated.0gze9e50xcx58w1eb9ccv1hehla7' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Parameter - Columns' datatype='string' name='[EP_LIMENG Parameter (copy)_26388282587279364]' param-domain-type='list' role='measure' type='nominal' value='&quot;E Mobile&quot;'>
+              <calculation class='tableau' formula='&quot;E Mobile&quot;' />
+            </column>
+            <column caption='Parameter - rows' datatype='string' name='[Parameter - Columns (copy)_1320962070497808398]' param-domain-type='list' role='measure' type='nominal' value='&quot;infectedperc&quot;'>
+              <calculation class='tableau' formula='&quot;infectedperc&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0gze9e50xcx58w1eb9ccv1hehla7'>
+            <column caption='Between P25 and P75' datatype='boolean' name='[Calculation_1320962070463979522]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='RANK_PERCENTILE(SUM([cases]))&lt;= 0.75 and  &#10;RANK_PERCENTILE(SUM([cases])) &gt;= 0.25'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='infectedperc' datatype='real' name='[Calculation_1320962070464565251]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[cases] / [POPESTIMATE2019]' />
+            </column>
+            <column caption='MAX Between Q1 and Q3' datatype='integer' name='[Calculation_1320962070467104772]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='WINDOW_MAX(IF [Calculation_1320962070463979522] THEN SUM([cases]) ELSE&#10;NULL END)'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='MIN Between Q1 and Q3' datatype='integer' name='[Calculation_1320962070468620293]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='WINDOW_MIN(IF [Calculation_1320962070463979522] THEN SUM([cases]) ELSE&#10;NULL END)'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='IQR' datatype='integer' name='[Calculation_1320962070469599238]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_1320962070467104772] - [Calculation_1320962070468620293]'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Lower Whisker Limit' datatype='real' name='[Calculation_1320962070469898247]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_1320962070468620293] - (1.5 * [Calculation_1320962070469599238])'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Upper Whisker Limit' datatype='real' name='[Calculation_1320962070470070280]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_1320962070467104772] + (1.5 * [Calculation_1320962070469599238])'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Outlier' datatype='boolean' name='[Calculation_1320962070470254601]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='SUM([cases]) &lt; [Calculation_1320962070469898247] OR SUM([cases]) &gt; [Calculation_1320962070470070280]'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='E Mobile' datatype='integer' name='[E_MOBILE]' role='measure' type='quantitative' />
+            <column caption='E Munit' datatype='integer' name='[E_MUNIT]' role='measure' type='quantitative' />
+            <column caption='E Noveh' datatype='integer' name='[E_NOVEH]' role='measure' type='quantitative' />
+            <column caption='Measures - rows' datatype='real' name='[Measures - Columns (copy)_1320962070497652749]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='CASE [Parameters].[Parameter - Columns (copy)_1320962070497808398]&#10;WHEN  &apos;Estimated Limeng&apos; THEN SUM([estimated_limeng])&#10;WHEN  &apos;Estimated Minority&apos; THEN SUM([estimated_minority])&#10;WHEN  &apos;Estimated Nohsdp&apos; THEN SUM([estimated_nohsdp])&#10;WHEN  &apos;E Mobile&apos; THEN SUM([E_MOBILE])&#10;WHEN  &apos;E Noveh&apos; THEN SUM([E_NOVEH])&#10;WHEN  &apos;E Munit&apos; THEN SUM([E_MUNIT])&#10;WHEN  &apos;infectedperc&apos; THEN SUM([Calculation_1320962070464565251])&#10;END' />
+            </column>
+            <column caption='Measures - Columns' datatype='real' name='[Measures - rows (copy)_1320962070483050507]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='CASE [Parameters].[EP_LIMENG Parameter (copy)_26388282587279364]&#10;WHEN  &apos;Estimated Limeng&apos; THEN SUM([estimated_limeng])&#10;WHEN  &apos;Estimated Minority&apos; THEN SUM([estimated_minority])&#10;WHEN  &apos;Estimated Nohsdp&apos; THEN SUM([estimated_nohsdp])&#10;WHEN  &apos;E Mobile&apos; THEN SUM([E_MOBILE])&#10;WHEN  &apos;E Noveh&apos; THEN SUM([E_NOVEH])&#10;WHEN  &apos;E Munit&apos; THEN SUM([E_MUNIT])&#10;WHEN  &apos;infectedperc&apos; THEN SUM([Calculation_1320962070464565251])&#10;END' />
+            </column>
+            <column caption='Popestimate2019' datatype='integer' name='[POPESTIMATE2019]' role='measure' type='quantitative' />
+            <column caption='Cases' datatype='integer' name='[cases]' role='measure' type='quantitative' />
+            <column caption='Estimated Limeng' datatype='real' name='[estimated_limeng]' role='measure' type='quantitative' />
+            <column caption='Estimated Minority' datatype='real' name='[estimated_minority]' role='measure' type='quantitative' />
+            <column caption='Estimated Nohsdp' datatype='real' name='[estimated_nohsdp]' role='measure' type='quantitative' />
+            <column caption='Fips' datatype='string' name='[fips]' role='dimension' type='nominal' />
+            <column-instance column='[fips]' derivation='None' name='[none:fips:nk]' pivot='key' type='nominal' />
+            <column-instance column='[predictedInfections100V2]' derivation='None' name='[none:predictedInfections100V2:ok]' pivot='key' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[predictedInfections100V2]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_1320962070470254601]' derivation='User' name='[usr:Calculation_1320962070470254601:nk:2]' pivot='key' type='nominal'>
+              <table-calc ordering-field='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[fips]' ordering-type='Field' />
+              <table-calc field='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[Calculation_1320962070467104772]' ordering-field='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[fips]' ordering-type='Field' />
+              <table-calc field='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[Calculation_1320962070469599238]' ordering-field='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[fips]' ordering-type='Field' />
+              <table-calc field='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[Calculation_1320962070463979522]' ordering-field='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[fips]' ordering-type='Field' />
+              <table-calc field='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[Calculation_1320962070469898247]' ordering-field='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[fips]' ordering-type='Field' />
+              <table-calc field='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[Calculation_1320962070468620293]' ordering-field='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[fips]' ordering-type='Field' />
+              <table-calc field='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[Calculation_1320962070470070280]' ordering-field='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[fips]' ordering-type='Field' />
+            </column-instance>
+            <column-instance column='[Measures - Columns (copy)_1320962070497652749]' derivation='User' name='[usr:Measures - Columns (copy)_1320962070497652749:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Measures - rows (copy)_1320962070483050507]' derivation='User' name='[usr:Measures - rows (copy)_1320962070483050507:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[usr:Calculation_1320962070470254601:nk:2]'>
+            <groupfilter function='member' level='[usr:Calculation_1320962070470254601:nk:2]' member='false' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0gze9e50xcx58w1eb9ccv1hehla7].[usr:Calculation_1320962070470254601:nk:2]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[usr:Measures - Columns (copy)_1320962070497652749:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='title' class='0' field='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[usr:Measures - rows (copy)_1320962070483050507:qk]' scope='cols' value='' />
+            <format attr='display' class='1' field='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[usr:Measures - Columns (copy)_1320962070497652749:qk]' scope='rows' value='false' />
+            <format attr='title' class='0' field='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[usr:Measures - Columns (copy)_1320962070497652749:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:predictedInfections100V2:ok]' />
+              <lod column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:fips:nk]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[usr:Measures - Columns (copy)_1320962070497652749:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:predictedInfections100V2:ok]' />
+              <lod column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:fips:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='shape' value='circle' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[usr:Measures - Columns (copy)_1320962070497652749:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:predictedInfections100V2:ok]' />
+              <lod column='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:fips:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='shape' value=':filled/circle' />
+                <format attr='mark-transparency' value='109' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([Parameters].[Parameter - Columns (copy)_1320962070497808398] * ([federated.0gze9e50xcx58w1eb9ccv1hehla7].[usr:Measures - Columns (copy)_1320962070497652749:qk] + [federated.0gze9e50xcx58w1eb9ccv1hehla7].[usr:Measures - Columns (copy)_1320962070497652749:qk]))</rows>
+        <cols>([Parameters].[EP_LIMENG Parameter (copy)_26388282587279364] * [federated.0gze9e50xcx58w1eb9ccv1hehla7].[usr:Measures - rows (copy)_1320962070483050507:qk])</cols>
+      </table>
+      <simple-id uuid='{5C8CF36A-C489-433E-824D-178D2FD6CC9D}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='0.1% maps'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='7' param='horz' w='98400' x='800' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98000' id='5' w='82400' x='800' y='1000'>
+              <zone h='49000' id='3' name='infect1k' w='82400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='9' name='predict1k' w='82400' x='800' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' w='16000' x='83200' y='1000'>
+              <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='8250' id='8' name='infect1k' pane-specification-id='0' param='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:Infect1k:ok]' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='8250' id='10' name='predict1k' pane-specification-id='0' param='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:predictedInfections1kV2:ok]' w='16000' x='83200' y='9250'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='2' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='1' param='vert' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{628EAD7B-28E6-4E08-8A35-CE82AA0CC2F2}' />
+    </dashboard>
+    <dashboard name='0.1% matrix'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='98000' id='3' is-scaled='1' param='Image/cm500.png' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='2' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='1' param='vert' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{4D2C7772-36D2-4884-9201-AC1BCA2AADEF}' />
+    </dashboard>
+    <dashboard name='0.2% maps'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='7' param='horz' w='98400' x='800' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98000' id='5' w='82400' x='800' y='1000'>
+              <zone h='49000' id='3' name='infect500' w='82400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='9' name='predict500' w='82400' x='800' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' w='16000' x='83200' y='1000'>
+              <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='8250' id='8' name='infect500' pane-specification-id='0' param='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:Infect500:ok]' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='8250' id='10' name='predict500' pane-specification-id='0' param='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:predictedInfections500V2:ok]' w='16000' x='83200' y='9250'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='2' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='1' param='vert' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{EE235E22-9A87-4997-AB57-5D4997D95E61}' />
+    </dashboard>
+    <dashboard name='0.2% matrix'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='98000' id='3' is-scaled='1' param='Image/cm1k.png' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='2' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='1' param='vert' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{DB30E0BC-43A3-43C7-A2A7-2FA6FBEFF840}' />
+    </dashboard>
+    <dashboard name='1% maps'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='7' param='horz' w='98400' x='800' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98000' id='5' w='82400' x='800' y='1000'>
+              <zone h='49000' id='3' name='infect100' w='82400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='9' name='predict100' w='82400' x='800' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' w='16000' x='83200' y='1000'>
+              <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='8250' id='8' name='infect100' pane-specification-id='0' param='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:Infect100:ok]' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='8250' id='10' name='predict100' pane-specification-id='0' param='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:predictedInfections100V2:ok]' w='16000' x='83200' y='9250'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='2' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='1' param='vert' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{003F6919-D2EC-4B65-B628-79ADE06E998C}' />
+    </dashboard>
+    <dashboard name='1% matrix'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='98000' id='3' is-scaled='1' param='Image/cm100.png' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='2' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='1' param='vert' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{ECCA5DA5-B9D4-42A6-A3D8-9107CC6314A9}' />
+    </dashboard>
+    <dashboard name='Intro'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='49000' id='3' w='98400' x='800' y='1000'>
+            <formatted-text>
+              <run fontcolor='#000000' fontsize='12'>The goal of this analysis is to be able to predict which United States counties have 0.1%, 0.2%, and 1% of their population be infected with COVID-19. </run>
+              <run>Æ&#10;&#10;</run>
+              <run fontcolor='#000000' fontsize='12'>The dataset used was collected from New York Times county level COVID-19 cases data, United States Census data, CDC&apos;s Social Vulnerability Index,  and Google&apos;s Global Mobility Report.</run>
+              <run>Æ&#10;&#10;</run>
+              <run fontcolor='#000000' fontsize='12'>Using extreme gradient boosting, the most predictive features of this dataset are estimated porportion of limited english speaking people in the population, estimated porportion of minorities in the population, estimated porportion of people with no high school diploma in the population, estimated amount of mobile homes, estimated amount of households with no vehicles, estimated amount of housing structures with 10 or more units.</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49000' id='5' name='features 100' w='98400' x='800' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='2' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='1' param='vert' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{6B2D968B-A534-47C8-8093-E69CD73D6697}' />
+    </dashboard>
+    <dashboard name='Outro'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='98000' id='3' w='98400' x='800' y='1000'>
+            <formatted-text>
+              <run fontsize='12'>The next steps for my project would include testing my model on other pandemics / viruses to check the quality of my model and data. More importantly, i would like to see if testing on other pandemics would reveal some explanation into my models performance. </run>
+              <run>Æ&#10;&#10;</run>
+              <run fontsize='12'>I would also try using other datasets such as Descartes Labs Mobility Index to see if it offers higher quality mobility data than Google. I would also like to include data to see how the distance between counties and the nearest major city plays a role in predicting the effects of a pendemic. Specifically I would be interested in seeing how people who drive to big cities for work can affect the spread of a pandemic in early stages. </run>
+              <run>Æ&#10;&#10;</run>
+              <run fontsize='12'>If my future analysis would go as planned, then my model could potentially help in identifying counties which are most vulnerable to the spread of a pandemic, as well as any ways in which that vulnerablity can be improved.</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='2' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='1' param='vert' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{59BDC360-EC65-45EF-9192-B97E04506D49}' />
+    </dashboard>
+    <dashboard name='conf_matrix' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Confusion Matrix&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='story-point-caption'>
+          <format attr='width' value='268' />
+        </style-rule>
+      </style>
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='2' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98340' id='1' param='vert' removable='false' w='98426' x='787' y='830'>
+            <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='3423' id='3' w='98426' x='787' y='830' />
+            <zone _.fcp.SetMembershipControl.false...type='flipboard-nav' _.fcp.SetMembershipControl.true...type-v2='flipboard-nav' h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' w='98426' x='787' y='4253' />
+            <zone _.fcp.SetMembershipControl.false...type='flipboard' _.fcp.SetMembershipControl.true...type-v2='flipboard' h='84440' id='5' paired-zone-id='4' removable='false' w='98426' x='787' y='14730'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='The model is able to predict counties that have a  0.1% infected population with an F1 score of 0.94.' captured-sheet='0.2% matrix' id='1' />
+                  <story-point caption='The model is able to predict counties that have a  0.2% infected population with an F1 score of 0.94.' captured-sheet='0.1% matrix' id='2' />
+                  <story-point caption='The model is able to predict counties that have a  1% infected population with an F1 score of 0.99.' captured-sheet='1% matrix' id='3' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{125F730D-725E-4AB7-B53F-04AE0BC2EF50}' />
+    </dashboard>
+    <dashboard name='maps' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Maps</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='story-point-caption'>
+          <format attr='width' value='326' />
+        </style-rule>
+      </style>
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='2' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98340' id='1' param='vert' removable='false' w='98426' x='787' y='830'>
+            <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='3423' id='3' w='98426' x='787' y='830' />
+            <zone _.fcp.SetMembershipControl.false...type='flipboard-nav' _.fcp.SetMembershipControl.true...type-v2='flipboard-nav' h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' w='98426' x='787' y='4253' />
+            <zone _.fcp.SetMembershipControl.false...type='flipboard' _.fcp.SetMembershipControl.true...type-v2='flipboard' h='84440' id='5' paired-zone-id='4' removable='false' w='98426' x='787' y='14730'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Of the 2,713 recored counties, 160 of them were mispredicted for having at least 0.1% of the population be infected with COVID-19.' captured-sheet='0.1% maps' id='1' />
+                  <story-point caption='155 counties were mispredicted for having at least 0.2% of the population be infected with COVID-19.' captured-sheet='0.2% maps' id='2' />
+                  <story-point caption='37 counties were mispredicted for having at least 0.2% of the population be infected with COVID-19.' captured-sheet='1% maps' id='3' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{0B179CE9-703C-4818-ADBE-FB1C2099DD01}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='dashboard' name='Intro'>
+      <viewpoints>
+        <viewpoint name='features 100' />
+      </viewpoints>
+      <active id='5' />
+      <simple-id uuid='{8DE516B1-697C-4D9A-82F0-1EEB9FD88463}' />
+    </window>
+    <window class='dashboard' name='conf_matrix'>
+      <viewpoints />
+      <active id='3' />
+      <simple-id uuid='{DE5322FC-E41B-4E86-9594-B98C07632F3A}' />
+    </window>
+    <window class='dashboard' maximized='true' name='maps'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{EF14FF1E-C6F5-4CF2-A761-5EBBDEFFE037}' />
+    </window>
+    <window class='worksheet' name='scatter plots'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[usr:Calculation_1320962070470254601:nk:2]' show-morefewerbutton='false' type='filter' />
+            <card mode='compact' param='[Parameters].[Parameter - Columns (copy)_1320962070497808398]' type='parameter' />
+            <card mode='compact' param='[Parameters].[EP_LIMENG Parameter (copy)_26388282587279364]' type='parameter' />
+            <card pane-specification-id='1' param='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:predictedInfections100V2:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{02503B17-185C-4F77-AF5A-9405F91B9A0F}' />
+    </window>
+    <window class='dashboard' name='Outro'>
+      <viewpoints />
+      <active id='3' />
+      <simple-id uuid='{466E4F3F-B54A-4672-987F-C3EF0A0AE9A6}' />
+    </window>
+    <window class='dashboard' name='0.1% matrix'>
+      <viewpoints />
+      <active id='3' />
+      <simple-id uuid='{B4EEDBB0-771C-4373-A41E-C01DD2E2BE1C}' />
+    </window>
+    <window class='dashboard' name='0.2% matrix'>
+      <viewpoints />
+      <active id='3' />
+      <simple-id uuid='{2BB82ED7-C4B0-4295-BC03-236B2B185869}' />
+    </window>
+    <window class='dashboard' name='1% matrix'>
+      <viewpoints />
+      <active id='3' />
+      <simple-id uuid='{28B3D7EB-094E-4BE4-A0DA-B1966EF811B4}' />
+    </window>
+    <window class='worksheet' name='infect1k'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:Infect1k:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+        <map-navigation value='1' />
+      </viewpoint>
+      <simple-id uuid='{B49FC956-89C8-4B61-9E83-0DEBDB2EF39B}' />
+    </window>
+    <window class='worksheet' name='predict1k'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:predictedInfections1kV2:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{08013B6C-62D0-4FD9-B849-D68D54374227}' />
+    </window>
+    <window class='worksheet' name='infect500'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:Infect500:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BDEED6C8-D7B4-475F-B41E-02CED6724ECF}' />
+    </window>
+    <window class='worksheet' name='predict500'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:predictedInfections500V2:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6585937F-BE82-4507-99F7-417DEF9B3673}' />
+    </window>
+    <window class='worksheet' name='infect100'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:Infect100:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E6C699AB-18C6-4703-9377-616FFBB544F3}' />
+    </window>
+    <window class='worksheet' name='predict100'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0gze9e50xcx58w1eb9ccv1hehla7].[none:predictedInfections100V2:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{584DCFDB-E09B-4050-BB1B-0FEA0596D1D0}' />
+    </window>
+    <window class='dashboard' name='0.1% maps'>
+      <viewpoints>
+        <viewpoint name='infect1k'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='2' />
+          <map-navigation value='1' />
+        </viewpoint>
+        <viewpoint name='predict1k'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='2' />
+          <map-navigation value='1' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{1A145880-72CD-472D-AF38-C2EFBC410700}' />
+    </window>
+    <window class='dashboard' name='0.2% maps'>
+      <viewpoints>
+        <viewpoint name='infect500'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='2' />
+          <map-navigation value='1' />
+        </viewpoint>
+        <viewpoint name='predict500'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='2' />
+          <map-navigation value='1' />
+        </viewpoint>
+      </viewpoints>
+      <active id='9' />
+      <simple-id uuid='{C0649BE5-9330-4311-A88B-3F1C0AE85B3C}' />
+    </window>
+    <window class='dashboard' name='1% maps'>
+      <viewpoints>
+        <viewpoint name='infect100'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='2' />
+          <map-navigation value='1' />
+        </viewpoint>
+        <viewpoint name='predict100'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='2' />
+          <map-navigation value='1' />
+        </viewpoint>
+      </viewpoints>
+      <active id='9' />
+      <simple-id uuid='{2A2F748E-2E79-425C-BC82-F54B2BB05216}' />
+    </window>
+    <window class='worksheet' name='features 100'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{780E9F57-5116-4E4F-AED3-DB59106F607F}' />
+    </window>
+  </windows>
+</workbook>
